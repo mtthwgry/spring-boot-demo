@@ -1,13 +1,15 @@
 flyway:
-  enabled: false
+  enabled: true
 spring:
   profiles: development
   jpa:
     hibernate:
-      ddl-auto: none
+      ddl-auto: validate
+    properties:
+      dialect: MySQL5Dialect
   datasource:
-    url: jdbc:mysql://localhost:3306/spring-boot-demo-development?autoReconnect=true&useSSL=false
+    url: jdbc:mysql://localhost:3306/spring_boot_demo_development?autoReconnect=true&useSSL=false
     username: spring.boot.demo
     password:
 server:
-  port: 9001
+  port: 8080

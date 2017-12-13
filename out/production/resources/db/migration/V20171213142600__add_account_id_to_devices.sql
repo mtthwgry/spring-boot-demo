@@ -1,0 +1,1 @@
+ALTER TABLE devices ADD COLUMN account_id bigint(20);
