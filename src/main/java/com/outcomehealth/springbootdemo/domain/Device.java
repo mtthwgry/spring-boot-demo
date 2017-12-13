@@ -14,7 +14,7 @@ public class Device {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    
+
     @NotBlank
     @Column(unique = true)
     @Size(min = 36, max = 36)
